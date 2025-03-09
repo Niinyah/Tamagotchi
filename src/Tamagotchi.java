@@ -30,11 +30,11 @@ class Tamagotchi {
     public void setEnergy(int energy) { this.energy = Math.max(getMinEnergy(), Math.min(energy, getMaxEnergy())); }
     public void setFood(int food) { this.food = Math.max(getMinFood(), Math.min(food, getMaxFood())); }
 
-    // Getter
-    protected int getMinEnergy() { return MIN_ENERGY; }
-    protected int getMaxEnergy() { return MAX_ENERGY; }
-    protected int getMinFood() { return MIN_FOOD; }
-    protected int getMaxFood() { return MAX_FOOD; }
+
+    public int getMinEnergy() { return MIN_ENERGY; }
+    public int getMaxEnergy() { return MAX_ENERGY; }
+    public int getMinFood() { return MIN_FOOD; }
+    public int getMaxFood() { return MAX_FOOD; }
 
     public void play() {
         if (energy > MIN_ENERGY && food > MIN_FOOD) {
